@@ -1,4 +1,4 @@
-#+TITLE: Python Cert Prep
+#+TITLE: Latex Config for org-mode
 #+AUTHOR: shae128
 
 #+OPTIONS: toc:t *:t ::t date:t f:t 
@@ -28,8 +28,12 @@
 #+LATEX_HEADER_EXTRA:    }
 #+LATEX_HEADER_EXTRA:    {\end{mdframed}}
 
+# Sample code block to have a beautiful export as PDF 
+# #+BEGIN_SRC python -n :results output pp replace :exports both 
+# #+END_SRC
 
+
+# Drafts 
 # #+LATEX_HEADER_EXTRA: \BeforeBeginEnvironment{verbatim}{\begin{mdframed}[frametitle={RESULTS:}]}
 # #+LATEX_HEADER_EXTRA: \AfterEndEnvironment{verbatim}{\end{mdframed}}
-
-#+LATEX: \newpage
+# #+LATEX_HEADER_EXTRA: \usepackage[framemethod=TikZ]{mdframed}
