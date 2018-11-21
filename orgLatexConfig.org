@@ -1,0 +1,35 @@
+#+TITLE: Python Cert Prep
+#+AUTHOR: shae128
+
+#+OPTIONS: toc:t *:t ::t date:t f:t 
+
+# To disable ugly red frame on table of content on PDF export
+#+LATEX_HEADER: \hypersetup{colorlinks=true,linkcolor=black}
+
+# To disable numbering on headers
+# #+LATEX: \setcounter{secnumdepth}{0}
+
+
+# Adding style to code results
+#+LATEX_HEADER_EXTRA: \usepackage[framemethod=TikZ]{mdframed}
+#+LATEX_HEADER_EXTRA: \BeforeBeginEnvironment{verbatim}{\begin{myenv}{Code Result}}
+#+LATEX_HEADER_EXTRA: \AfterEndEnvironment{verbatim}{\end{myenv}}
+
+# New style for latex to use for code results 
+#+LATEX_HEADER_EXTRA:  \newenvironment{myenv}[1]
+#+LATEX_HEADER_EXTRA:    {\mdfsetup{
+#+LATEX_HEADER_EXTRA:      frametitle={\colorbox{white}{\space#1\space}},
+#+LATEX_HEADER_EXTRA:      roundcorner=5pt,
+#+LATEX_HEADER_EXTRA:      backgroundcolor=gray !1,
+#+LATEX_HEADER_EXTRA:      innertopmargin=10pt,
+#+LATEX_HEADER_EXTRA:      frametitleaboveskip=-\ht\strutbox,
+#+LATEX_HEADER_EXTRA:      }
+#+LATEX_HEADER_EXTRA:    \begin{mdframed}%
+#+LATEX_HEADER_EXTRA:    }
+#+LATEX_HEADER_EXTRA:    {\end{mdframed}}
+
+
+# #+LATEX_HEADER_EXTRA: \BeforeBeginEnvironment{verbatim}{\begin{mdframed}[frametitle={RESULTS:}]}
+# #+LATEX_HEADER_EXTRA: \AfterEndEnvironment{verbatim}{\end{mdframed}}
+
+#+LATEX: \newpage
