@@ -1,7 +1,7 @@
 #+TITLE: Latex Config for org-mode
 #+AUTHOR: shae128
 
-#+OPTIONS: toc:t *:t ::t date:t f:t 
+#+OPTIONS: toc:t *:t ::t date:t f:t H:8 num:8
 
 # To disable ugly red frame on table of content on PDF export
 #+LATEX_HEADER: \hypersetup{colorlinks=true,linkcolor=black}
