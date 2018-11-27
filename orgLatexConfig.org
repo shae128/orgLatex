@@ -33,6 +33,10 @@
 # #+END_SRC
 
 
+# To add space after paragraphs and still have indentation
+#+LATEX_HEADER: \usepackage{parskip}
+#+LATEX_HEADER: \setlength{\parindent}{15pt}
+
 # Drafts 
 # #+LATEX_HEADER_EXTRA: \BeforeBeginEnvironment{verbatim}{\begin{mdframed}[frametitle={RESULTS:}]}
 # #+LATEX_HEADER_EXTRA: \AfterEndEnvironment{verbatim}{\end{mdframed}}
